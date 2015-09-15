@@ -9,12 +9,12 @@
 			{% for exhibit in site.categories.exhibit %}
 				{% if exhibit.home == true and counter == 0 %}
 					{% assign counter = 1 %}
-					<title>{{exhibit.title}}</title>
+					<title>project 4</title>
 					<meta name='description' content="{{exhibit.content | truncate: 50 }}" />
 				{% endif %}
 			{%  endfor %}
 		{% else %}
-			<title>{{page.title}}</title>
+			<title>project 4</title>
 			<meta name='description' content="{{page.content | truncate: 50 }}" />
 		{% endif %}
 		<meta name='author' content="{{ site.author }}" />
@@ -28,7 +28,7 @@
 		<div id='index'>
 			<div class='container'>
 				<div class='top'>
-					<p><strong><a href='/' style='color: black;'>{{ site.title }}</a></strong></p>
+					<p><strong><a href='/' style='color: green;'>project 4</a></strong></p>
 				</div>
 				{% for section in site.categories.section %}
 					<ul class='section' id='section_{{ section.id }}'>
@@ -43,10 +43,13 @@
 						</li>
 					</ul>
 				{%  endfor %}
-				<div class='bot'><p>Creado por:<br />
-				<a href='http://twitter.com/{{site.twitter}}'>{{site.author}}</a></p>
-				<p><a href='https://github.com/colaborativa/Jekyllxhibit'>Desarrollado con Jekyllxhibit</a></p></div>
-			</div>
+				<div class='bot'>
+				<img src="https://licensebuttons.net/p/zero/1.0/88x15.png"><br>Unless noted otherwise, this work is licensed under a <a href="https://creativecommons.org/publicdomain/zero/1.0/">Creative Commons Zero License.</a>
+				<p>Built with <a href='https://github.com/colaborativa/Jekyllxhibit'>Jekyllxhibit</a></p>
+				<br><br>
+				<br><br>
+				<p>An <a href='https://github.com/hulec/hulec.github.io'>open source project site</a> by <a href='http://tomhackshaw.com'>Tom Hackshaw</a></p>
+				</div>
 		</div>
 		{% if page.title == 'index' %}
 			{% assign counter = 0 %}
