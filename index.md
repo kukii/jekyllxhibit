@@ -12,5 +12,5 @@ published: true
 <div align="right">
 Created by Tom Hackshaw
 <br>
-**no new ideas** - a self-directed six week project
+no new ideas - a self-directed six week project
 </div>
